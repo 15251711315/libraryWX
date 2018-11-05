@@ -1,0 +1,10 @@
+<view class='items-list'>
+
+  <view class='pro-item' wx:for="{{selectedBooksList}}">
+    <image class='pro-logo' src='{{item.images}}'></image>
+    <view class='pro-body'>
+      <view class='pro-title'>{{item.name}}</view>
+      <text class='pro-desc'>{{item.author}}</text>
+    </view>
+  </view>
+</view>

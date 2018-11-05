@@ -1,0 +1,34 @@
+
+
+.main-left{
+    width:85rpx;
+    height:85rpx;
+    float:left;
+}
+.main-right{
+    width:218rpx;
+    height:85rpx;
+    float:right;
+}
+.right-top{
+    width:218rpx;
+    height:60rpx;
+    float:right;
+}
+.right-mid{
+    width:218rpx;
+    height:60rpx;
+    float:right;
+}
+.right-foot{
+   width:218rpx;
+    height:10rpx;
+    float:right;
+}
+.foot-left{
+    width:66rpx;
+    height:66rpx;
+    float:right;
+    
+}
+

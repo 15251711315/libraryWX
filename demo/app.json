@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/selectedBooks/selectedBooks"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "公司图书馆",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "selectedColor": "#fff",
+      "pagePath": "pages/index/index",
+      "text": "书库",
+      "iconPath": "images/home_1.jpg",
+      "selectedIconPath": "images/home_2.jpg"
+    },{
+      "selectedColor": "#fff",
+      "pagePath": "pages/my/my",
+      "text": "我",
+      "iconPath": "images/my_1.jpg",
+      "selectedIconPath": "images/my_2.jpg"
+    }]
+  }
+}
