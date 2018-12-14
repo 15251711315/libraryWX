@@ -4,22 +4,15 @@ const app = getApp()
 
 Page({
   data: {
-    imgUrls: [
-      '/images/top_1.jpg',
-      '/images/top_2.jpg',
-      '/images/top.jpg',
-    ],
-    indicatorDots: false,
-    autoplay: false,
-    interval: 5000,
-    duration: 1000,
-    booksList: [],
-    name: '',
+    avatarUrl:'',
+    nickName:'' 
   },
 
   onLoad: function () {
-   APP
-
+    this.setData({
+      avatarUrl: getApp().globalData.userInfo.avatarUrl,
+      nickName:getApp().globalData.userInfo.nickName
+    })
   },
   
 })

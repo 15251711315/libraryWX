@@ -1,4 +1,4 @@
-//index.js
+  //index.js
 //获取应用实例
 const app = getApp()
 
@@ -20,7 +20,6 @@ Page({
   
   onLoad: function () {
     this.queryBooks();
-   
   },
   nameInput:function(e){
     this.setData({
@@ -30,7 +29,7 @@ Page({
   queryBooks:function(e){
     var that = this;  
     wx.request({
-      url: 'https://www.baohaiya.top/library/books/queryBooks',
+      url: app.globalData.url +"/books/queryBooks",
       data: {
         nameLike: that.data.nameLike
       },

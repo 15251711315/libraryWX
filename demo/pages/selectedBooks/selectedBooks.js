@@ -16,8 +16,6 @@ Page({
     selectedBooksList: options.selectedBooksList,
 
   })
-
-    console.log(this.data.selectedBooksList)
   },
 
   /**

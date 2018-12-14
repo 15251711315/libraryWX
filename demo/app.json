@@ -1,9 +1,11 @@
 {
   "pages":[
+    "pages/login/login",
     "pages/index/index",
     "pages/my/my",
     "pages/logs/logs",
     "pages/selectedBooks/selectedBooks"
+   
   ],
   "window":{
     "backgroundTextStyle":"light",
