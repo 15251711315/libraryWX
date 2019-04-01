@@ -10,20 +10,21 @@
 <view class='items-form'>
   <view ><input style='padding-left:20rpx' placeholder='输入你想查询的书籍' class='pro-input' bindinput='nameInput' /></view>
   <view class='pro-body'>
-    <image src='/images/search.jpg' class='pro-button' bindtap='queryBooks' />
+    <image src='https://www.baohaiya.top/bookPics/search.jpg' class='pro-button' bindtap='queryBooks' />
   </view>
 </view>
 <view class='items-list'>
 
-  <view class='pro-item' wx:for="{{booksList}}" bindtap='queryBooks'>
+  <view class='pro-item' wx:for="{{booksList}}" wx:key="id" bindtap='queryBooks'>
     <image class='pro-logo' src='{{item.images}}'></image>
     <view class='pro-body'>
       <view class='pro-title'>{{item.name}}</view>
       <text class='pro-desc'>{{item.author}}</text>
       <view class='pro-footer'>
         <text class='pro-desc'>剩余数量:  {{item.num}}</text>
-       
+       <button class='pro-desc' bindtap='selectBooks' data-value="{{item}}">加入预选</button>
       </view>
+     
     </view>
   </view>
 

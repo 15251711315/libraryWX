@@ -21,10 +21,15 @@ App({
   },
 
   globalData: {
-    url: "http://localhost:8066",
+    // url: "http://localhost:8066",
+    url: "https://www.baohaiya.top/library",
     openid:"",
-    userInfo:""
+    userInfo:"",
+    selectedBooksList: [],
   } 
+
+
+  
 });
 
 

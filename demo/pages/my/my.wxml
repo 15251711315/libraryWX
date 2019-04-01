@@ -8,7 +8,7 @@
 
   <view class="li" data-index="0" bindtap='changeToggle'>
     <view class="left">
-      <image class="item-image" src="../../images/reading.jpg"></image>
+      <image class="item-image" src="https://www.baohaiya.top/bookPics/reading.jpg"></image>
       <text class="item-text">正在阅读</text>
     </view>
     <view class="right">
@@ -32,7 +32,7 @@
 
   <view class="li" data-index="1" bindtap='changeToggle'>
     <view class="left">
-      <image class="item-image" src="../../images/books_his.jpg"></image>
+      <image class="item-image" src="https://www.baohaiya.top/bookPics/books_his.jpg"></image>
       <text class="item-text">历史借阅</text>
     </view>
     <view class="right">
@@ -56,5 +56,58 @@
       </view>
     </view>
   </view>
+
+  <view class="li" data-index="2" bindtap='changeToggle'>
+    <view class="left">
+      <image class="item-image" src="https://www.baohaiya.top/bookPics/my3.jpg"></image>
+      <text class="item-text">预选</text><form bindsubmit="submit" report-submit='true' >
+  <button form-type="submit" type="default" size="mini">提交</button>
+</form> 
+    </view>
+    <view class="right">
+      <text class="iconfont {{selectedFlag[2]?'icon-shangjiantou':'icon-xiala'}}"> </text>
+    </view>
+  </view>
+  <view hidden="{{!selectedFlag[2]}}">
+    <view class='items-list'>
+      <view class='pro-item' wx:for="{{list03}}" wx:for-item="item" wx:for-index="index">
+
+        <image class='pro-logo' src='{{item.images}}'></image>
+        <view class='pro-body'>
+          <view class='pro-title'>{{item.name}}</view>
+          <text class='pro-desc'>{{item.author}}</text>
+          <view class='pro-footer'>
+          <button class='pro-desc' bindtap='removeBooks' data-index="{{index}}">移除</button>
+      </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+<!-- <view class="li" data-index="3" bindtap='changeToggle'>
+    <view class="left">
+      <image class="item-image" src="../../images/my4.jpg"></image>
+      <text class="item-text">等待审核</text>
+    </view>
+    <view class="right">
+      <text class="iconfont {{selectedFlag[3]?'icon-shangjiantou':'icon-xiala'}}"> </text>
+    </view>
+  </view>
+   <view hidden="{{!selectedFlag[3]}}">
+    <view class='items-list'>
+      <view class='pro-item' wx:for="{{list04}}" wx:for-item="item" wx:for-index="index">
+
+        <image class='pro-logo' src='{{item.images}}'></image>
+         <view class='pro-body'>
+          <view class='pro-title'>{{item.booksPO.name}}</view>
+          <text class='pro-desc'>{{item.booksPO.author}}</text>
+          <view class='pro-footer'>
+      </view>
+        </view>
+
+      </view>
+    </view>
+  </view> -->
     
   </view>

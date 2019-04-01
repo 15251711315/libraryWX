@@ -4,6 +4,8 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   onLoad: function () {
+   
+    
     var that = this;
     // 查看是否授权
     wx.getSetting({
@@ -22,6 +24,9 @@ Page({
         }
       }
     })
+  },
+  onShareAppMessage: function () {
+
   },
   bindGetUserInfo: function (e) {
     if (e.detail.userInfo) {
@@ -80,5 +85,11 @@ Page({
       }
     });
   },
-    
+  onShareAppMessage: function () {
+    return {
+      title: '图书馆',
+      desc: '最具人气的图书馆程序!',
+      path: '/pages/index/index'
+    }
+  }
 })

@@ -13,9 +13,7 @@ Page({
     interval: 5000,
     duration: 1000, 
     booksList:[],
-    selectedBooksList:[],
-    nameLike:'',
-    selectedBooksIds:"",
+    nameLike:''
   },
   
   onLoad: function () {
@@ -24,6 +22,13 @@ Page({
   nameInput:function(e){
     this.setData({
       nameLike: e.detail.value
+    })
+  },
+  selectBooks: function (e) {
+    app.globalData.selectedBooksList.push(e.currentTarget.dataset.value);
+    wx.showModal({
+      title: '加入成功',
+      content: '已加入预选。',
     })
   },
   queryBooks:function(e){
@@ -49,6 +54,13 @@ Page({
         })
       }
     })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '图书馆',
+      desc: '最具人气的图书馆程序!',
+      path: '/pages/index/index'
+    }
   }
   
 }) 
