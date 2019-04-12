@@ -60,9 +60,10 @@
   <view class="li" data-index="2" bindtap='changeToggle'>
     <view class="left">
       <image class="item-image" src="https://www.baohaiya.top/bookPics/my3.jpg"></image>
-      <text class="item-text">预选</text><form bindsubmit="submit" report-submit='true' >
-  <button form-type="submit" type="default" size="mini">提交</button>
-</form> 
+      <text class="item-text">预选</text>
+      <form bindsubmit="submit" report-submit='true' >
+        <button form-type="submit" type="default" size="mini">提交</button>
+      </form> 
     </view>
     <view class="right">
       <text class="iconfont {{selectedFlag[2]?'icon-shangjiantou':'icon-xiala'}}"> </text>

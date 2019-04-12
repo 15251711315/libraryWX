@@ -105,6 +105,7 @@ Page({
           content: '提交成功。',
         })
         app.globalData.selectedBooksList=[];
+       
       },
       fail: function () {
         wx.showModal({
